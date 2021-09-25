@@ -1,0 +1,23 @@
+.photo-grid{
+    display: grid;
+    gap: 1rem;
+
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    /* card size ko fix krna ho to ....
+    use grid-auto-rows: 240px(size of the card */
+    grid-auto-rows: 240px;
+
+
+}
+
+@media screen and (min-width: 600px){
+    
+    .card-tall {
+        grid-row: span 2/ auto;
+    }
+    
+    .card-wide {
+        grid-column: span 2/ auto;
+    }
+
+}
